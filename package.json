@@ -1,0 +1,16 @@
+{
+  "name": "expense-management",
+  "version": "1.0.0",
+  "description": "Application which will be useful for managing your expenses",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Shivani Reddy",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "mongoose": "^5.9.6"
+  }
+}
