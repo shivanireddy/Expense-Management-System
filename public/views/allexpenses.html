@@ -1,0 +1,39 @@
+<div style="margin-top:20px" class="container">
+
+    <center>
+        <a ng-href="/#/addexpense">
+            <button class="btn btn-success">Add Expense</button>
+        </a>
+    </center>
+    <br>
+    <br>
+    <div class="row h-100">
+
+        <div ng-repeat="ex in expense.data" class="col-lg-8 mx-auto">
+            <div class="card">
+                <div class="card-header">
+                    <h5> Expense</h5>
+                </div>
+                <div class="card-body">
+                    <p class="card-text">
+                        Title : {{ex.name}}
+                    </p>
+                    <p class="card-text">
+                        Description : {{ex.description}}
+                    </p>
+                    <p class="card-text">
+                        Amount : {{ex.amount}}
+                    </p>
+                    <p class="card-text">
+                        Created On : {{ex.created | date:"medium"}}
+                    </p>
+
+                    <button ng-click="expense.edit(ex._id)" class="btn btn-primary">Edit Expense</button>
+                    <button ng-click="expense.delete(ex._id)" class="btn btn-danger float-right">Delete</button>
+
+                </div>
+            </div>
+            <br>
+        </div>
+    </div>
+</div>
